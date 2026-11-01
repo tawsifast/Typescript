@@ -11,9 +11,22 @@ console.log(addTwo(100, 30));
 
 
 //------------ Array & Tuple read only modifier ------------------//
+
 const arr: Array<string> = ["Programming", "Hello", "Tawsif"];
 // const arr: string[] = ["Programming", "Hello", "Tawsif"];
 // const num : number[] = [1,2,3,4,5];
 
 const dhakaLatLong : readonly [number, number] = [12.3421, 12312]
 
+//------------- Rest parameters ---------------//
+
+const sum = (...numbers: number[]) =>{
+  return numbers.reduce((total,sum)=> total + sum, 0)
+}
+sum(1,2,3,4,5)
+
+const logUserAction = (...args: [name: string, age: number, isActive: boolean])=>{
+  const [name, age] = args;
+  console.log(name + " is " + age);
+}
+logUserAction("Tawsif", 23, true)
