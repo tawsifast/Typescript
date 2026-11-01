@@ -1,0 +1,19 @@
+// let myString: string = "Programming Hero";
+// let myNumber: number = 5432;
+// let myBoolean: boolean = true;
+// let mySymbol: symbol = Symbol();
+// let myBigInt: bigint = 100n;
+
+const addTwo = (a: number, b: number): number => {
+  return a + b;
+};
+console.log(addTwo(100, 30));
+
+
+//------------ Array & Tuple read only modifier ------------------//
+const arr: Array<string> = ["Programming", "Hello", "Tawsif"];
+// const arr: string[] = ["Programming", "Hello", "Tawsif"];
+// const num : number[] = [1,2,3,4,5];
+
+const dhakaLatLong : readonly [number, number] = [12.3421, 12312]
+
