@@ -30,3 +30,43 @@ const logUserAction = (...args: [name: string, age: number, isActive: boolean])=
   console.log(name + " is " + age);
 }
 logUserAction("Tawsif", 23, true)
+
+//----------------- Object type, type alias and interface ----------------//
+// const user : {
+//   name: string;
+//   age : number;
+//   isActive : boolean;
+//   action : ()=>void;
+//   badges : string[]
+// } = {
+//   name: "Tawsif",
+//   age: 23,
+//   isActive : true,
+//   action:()=> console.log("Hello world"),
+//   badges: ["abc", "bcd"]
+// }
+
+type TUser = {
+  name: string;
+  age : number;
+  isActive : boolean;
+  action : ()=>void;
+  badges : string[]
+}
+
+interface Iuser {
+  name: string;
+  age : number;
+  isActive : boolean;
+  action : ()=>void;
+  badges : string[]
+}
+
+
+const user : TUser = {
+  name: "Tawsif",
+  age: 23,
+  isActive : true,
+  action:()=> console.log("Hello world"),
+  badges: ["abc", "bcd"]
+}
