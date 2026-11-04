@@ -4,6 +4,8 @@
 // let mySymbol: symbol = Symbol();
 // let myBigInt: bigint = 100n;
 
+import { greetings } from "./v1-module-config";
+
 const addTwo = (a: number, b: number): number => {
   return a + b;
 };
@@ -36,7 +38,7 @@ logUserAction("Tawsif", 23, true)
 //   name: string;
 //   age : number;
 //   isActive : boolean;
-//   action : ()=>void;
+//   action : () => void;
 //   badges : string[]
 // } = {
 //   name: "Tawsif",
@@ -70,3 +72,5 @@ const user : TUser = {
   action:()=> console.log("Hello world"),
   badges: ["abc", "bcd"]
 }
+
+greetings()
