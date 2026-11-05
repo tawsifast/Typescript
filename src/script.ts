@@ -4,7 +4,8 @@
 // let mySymbol: symbol = Symbol();
 // let myBigInt: bigint = 100n;
 
-import { greetings } from "./v1-module-config";
+import "./v1-module-config.js"
+
 
 const addTwo = (a: number, b: number): number => {
   return a + b;
@@ -72,5 +73,3 @@ const user : TUser = {
   action:()=> console.log("Hello world"),
   badges: ["abc", "bcd"]
 }
-
-greetings()
